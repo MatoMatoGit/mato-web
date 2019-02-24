@@ -1,0 +1,14 @@
+@import //General includes
+'general/variables',
+'general/general';
+
+@import //Components
+'components/header',
+'components/form',
+'components/footer';
+
+@import //Pages
+'pages/homepage/hero',
+'pages/homepage/about',
+'pages/homepage/product-overview-page',
+'pages/homepage/product-detail-page';
