@@ -1,0 +1,31 @@
+.hero {
+	.hero-image {
+		img {
+			object-fit: cover;
+			width: 100%;
+			max-width: $max-width;
+			margin: 0 auto;
+			max-height: 50rem;
+			box-sizing: border-box;
+			object-position: center;
+		}
+	}
+
+	.hero-content {
+		margin-top: 4rem;
+
+		.hero-content-title {
+			padding-left: 0;
+
+			h1 {
+				font-size: $h1;
+				font-weight: bold;
+				color: $mato-black;
+			}
+		}
+
+		.hero-content-text {
+			padding-right: 0;
+		}
+	}
+}
