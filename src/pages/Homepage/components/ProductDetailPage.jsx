@@ -3,8 +3,7 @@ import React from 'react'
 const ProductDetailPage = ({data}) => {
 
     return (
-        <div className="product-detail-page">
-            <h1>Product Detail Page</h1>
+        <div id="product-detail-page" className="product-detail-page">
         </div>
     )
 }
