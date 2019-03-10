@@ -19,7 +19,8 @@ class App extends Component {
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Homepage}/>
-                        <Route component={NotFound}/> </Switch>
+                        <Route component={NotFound}/>
+                    </Switch>
                 </Router>
             </>
         )

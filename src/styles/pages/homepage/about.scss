@@ -1,11 +1,55 @@
 .about {
-	img {
-		object-fit: cover;
-		width: 100%;
-		max-width: $max-width;
-		margin: 0 auto;
-		max-height: 50rem;
-		box-sizing: border-box;
-		object-position: center;
+	.about-image {
+		position: relative;
+
+		h1 {
+			@extend %h1;
+			color: white;
+			position: absolute;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+			top: 50%;
+		}
+
+		img {
+			object-fit: fill;
+			width: 100%;
+			max-width: $max-width;
+			padding: $gutter;
+			margin: 0 auto;
+			max-height: 50rem;
+			box-sizing: border-box;
+			object-position: center;
+		}
+	}
+
+	.about-content {
+		margin-top: 2.4rem;
+
+		h1 {
+			@extend %h2;
+			margin-bottom: 2.4rem;
+		}
+
+		p {
+			@extend %p;
+			margin-bottom: 2.4rem;
+		}
+	}
+
+	.about-links {
+		margin-top: 2.4rem;
+
+		.about-links-buttons {
+			width: 100%;
+			display: inline-flex;
+			align-items: flex-end;
+			flex-direction: column;
+
+			.mato-button {
+				margin-bottom: 1.2rem;
+			}
+		}
 	}
 }

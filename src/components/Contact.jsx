@@ -38,8 +38,7 @@ class Contact extends React.Component {
         fetch('https://api.mailgun.net/v3/sandbox3a80f26dcf834f8c8a9027a836ada35b.mailgun.org', {
             method: 'POST',
             body: data,
-            dataType: 'json',
-            headers: {"HeaderName": "5e54e9026b92a5a4e5cd4dc6ef41791c-acb0b40c-9e8419ac"},
+            dataType: 'json'
         });
     }
 
