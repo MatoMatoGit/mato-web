@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Footer = ({data}) => {
+    const Footer = ({data}) => {
 
-    return (
+        return (
         <div className="footer">
             <div className="row">
                 <ul className="col-6 col-md-3 footer-content">

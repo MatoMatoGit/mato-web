@@ -4,9 +4,9 @@ const About = ({data}) => {
 
     return (
         <div id="about" className="about">
-            <div className="row">
+            <div className="row about-image">
                 <h1>Over MatoMato</h1>
-                <img src='./images/about.png' alt='about'/>
+                <img src='./images/about.png' alt='about' />
             </div>
 
             <div className="row">

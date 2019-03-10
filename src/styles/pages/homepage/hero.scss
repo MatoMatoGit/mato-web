@@ -1,31 +1,48 @@
 .hero {
-	.hero-image {
-		img {
-			object-fit: cover;
-			width: 100%;
-			max-width: $max-width;
-			margin: 0 auto;
-			max-height: 50rem;
-			box-sizing: border-box;
-			object-position: center;
-		}
-	}
+	height: 100vh;
+	margin-top: -8rem;
 
 	.hero-content {
-		margin-top: 4rem;
+		position: absolute;
+		transform: translateY(-50%);
+		top: 50%;
 
-		.hero-content-title {
-			padding-left: 0;
-
-			h1 {
-				font-size: $h1;
-				font-weight: bold;
-				color: $mato-black;
+		.hero-image {
+			img {
+				object-fit: contain;
+				width: 100%;
+				max-width: $max-width;
+				margin: 0 auto;
+				max-height: 50rem;
+				box-sizing: border-box;
+				object-position: center;
 			}
 		}
 
-		.hero-content-text {
-			padding-right: 0;
+		.hero-container {
+			.hero-text {
+				position: relative;
+				transform: translateY(-50%);
+				top: 50%;
+
+				h1 {
+					@extend %h1;
+					margin-bottom: 1.6rem;
+				}
+
+				p {
+					@extend %p;
+					margin-bottom: 1.6rem;
+				}
+
+				.hero-content-buttons .mato-button {
+					margin-right: 2rem;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
 		}
 	}
 }

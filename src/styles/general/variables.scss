@@ -1,6 +1,9 @@
-//sizing
-$max-width: 92.6rem;
-$gutter: 0 1rem;
+@import url("https://use.typekit.net/hjt6shn.css");
+
+$max-width: 95.6rem;
+$gutter: 0 1.5rem;
+$border-radius: 1rem;
+$button-height: 3rem;
 
 //colours
 $mato-green: #8EFFA0;
@@ -11,5 +14,57 @@ $border: .2rem solid $mato-black;
 $border-mato: .2rem solid $mato-green;
 
 //fonts
-$h1: 7rem;
-$h3: 1.6rem;
+$family-primary: europa, sans-serif;
+
+
+$h1: 4rem;
+$h2: 3rem;
+$h3: 2rem;
+$h4: 1.6rem;
+$button: 1.5rem;
+$p: 1.4rem;
+
+$weight-regular: 400;
+$weight-bold: 700;
+
+%h1 {
+	font-family: $family-primary;
+	font-size: $h1;
+	font-weight: $weight-bold;
+	color: $mato-black;
+}
+
+%h2 {
+	font-family: $family-primary;
+	font-size: $h2;
+	font-weight: $weight-bold;
+	color: $mato-black;
+}
+
+%h3 {
+	font-family: $family-primary;
+	font-size: $h3;
+	font-weight: $weight-regular;
+	color: $mato-black;
+}
+
+%h4 {
+	font-family: $family-primary;
+	font-size: $h4;
+	font-weight: $weight-bold;
+	color: $mato-black;
+}
+
+%button {
+	font-family: $family-primary;
+	font-size: $button;
+	font-weight: $weight-bold;
+	color: $mato-black;
+}
+
+%p {
+	font-family: $family-primary;
+	font-size: $p;
+	font-weight: $weight-regular;
+	color: $mato-grey;
+}

@@ -11,3 +11,9 @@ html {
 	padding: $gutter;
 	margin: 0 auto;
 }
+
+.row {
+	max-width: $max-width;
+	padding: 0;
+	margin: 0 auto;
+}

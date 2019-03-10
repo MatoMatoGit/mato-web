@@ -10,13 +10,12 @@ const Header = ({data}) => {
             <Navbar bg="white" sticky="top" expand="lg" className="header justify-content-between">
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Brand href="#home">
-                    <img src='./images/matomato.svg' height="35px" alt="MatoMato"/>
+                    <img src='./images/matomato.svg' height="36px" alt="MatoMato"/>
                 </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Scrollspy items={['hero', 'about', 'contact']}
-                                   currentClassName="selected"
-                                   offset={ -80 }>
+                                   currentClassName="selected">
 
                             <Nav.Link href="#hero">Home</Nav.Link>
                             <Nav.Link href="#about">Over Ons</Nav.Link>
