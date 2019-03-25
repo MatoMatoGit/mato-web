@@ -15,7 +15,8 @@ const Header = ({data}) => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Scrollspy items={['hero', 'about', 'contact']}
-                                   currentClassName="selected">
+                                   currentClassName="selected"
+                                   offset={-200}>
 
                             <Nav.Link href="#hero">Home</Nav.Link>
                             <Nav.Link href="#about">Over Ons</Nav.Link>

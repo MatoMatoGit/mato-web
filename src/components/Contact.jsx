@@ -1,77 +1,75 @@
 import React from 'react';
-
-const inputParsers = {
-    date(input) {
-        const [month, day, year] = input.split('/');
-        return `${year}-${month}-${day}`;
-    },
-    uppercase(input) {
-        return input.toUpperCase();
-    },
-    number(input) {
-        return parseFloat(input);
-    },
-};
+import axios from 'axios';
 
 class Contact extends React.Component {
-    constructor() {
-        super();
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
 
     handleSubmit(event) {
         event.preventDefault();
-        const form = event.target;
-        const data = new FormData(form);
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const telephone = document.getElementById('telephone').value;
+        const message = document.getElementById('message').value;
 
-        for (let name of data.keys()) {
-            const input = form.elements[name];
-            const parserName = input.dataset.parse;
-
-            if (parserName) {
-                const parser = inputParsers[parserName];
-                const parsedValue = parser(data.get(name));
-                data.set(name, parsedValue);
+        axios({
+            method: "POST",
+            url: "http://localhost:3002/mail/send",
+            data: {
+                name: name,
+                email: email,
+                telephone: telephone,
+                message: message
             }
-        }
+        }).then((response) => {
+            if (response.data.msg === 'success') {
+                alert("Bedankt voor uw bericht.");
+                this.resetForm()
+            } else if (response.data.msg === 'fail') {
+                alert("Het versturen van het bericht is helaas mislukt, probeer het op een later moment nog eens.")
+            }
+        })
+    }
 
-        fetch('https://api.mailgun.net/v3/sandbox3a80f26dcf834f8c8a9027a836ada35b.mailgun.org', {
-            method: 'POST',
-            body: data,
-            dataType: 'json'
-        });
+    resetForm() {
+        document.getElementById('contact-form').reset();
     }
 
     render() {
         return (
             <div id="contact" className="contact">
-                <div className="row">
-                    <div className="contact-info col-12 col-md-6">
-                        <h1>Laat je adviseren!</h1>
+                <div className="contact-title">
+                    <h2>Contact</h2>
+                </div>
+
+                <div className="contact-container">
+                    <div className="contact-info">
+                        <h4>Laat je adviseren!</h4>
                         <p>Neem contact met ons op via het formulier, of stuur ons een mail.</p>
-                        <a className="mato-button-alt" href='/'>Stuur mail</a>
+                        <a className="mato-button-alt" href='mailto:info@info'>Stuur mail</a>
                         <img src='./images/tomato.svg' alt='tomato'/>
                     </div>
 
-                    <div className="contact-form col-12 col-md-6">
-                        <form onSubmit={this.handleSubmit}>
+                    <div className="contact-form">
+                        <h4>Stuur me een vraag</h4>
+                        <p>Vul het formulier in en ik beantwoord
+                            je vraag zo snel mogelijk.</p>
 
+                        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                             <p>Naam</p>
-                            <input name="name" type="text"/>
+                            <input id="name" name="name" type="text"/>
 
-                            <p>Emailadres</p>
-                            <input name="email" type="email" required/>
+                            <p>Emailadres*</p>
+                            <input id="email" name="email" type="email" required/>
 
-                            <p>Telefoonnummer</p>
-                            <input name="telephone" type="tel" required/>
+                            <p>Telefoonnummer*</p>
+                            <input id="telephone" name="telephone" type="tel" required/>
 
                             <p>Je bericht</p>
-                            <input name="message" type="text"/>
+                            <textarea id="message" name="message" type="text"/>
 
-                            <input name="terms" type="radio" required/>
-                            <span>Accepteer onze voorwaarden</span>
+                            <input name="terms" type="checkbox" required/>
+                            <a href="./voorwaarden.pdf"><span>Accepteer onze voorwaarden</span></a>
 
-                            <button>Verstuur</button>
+                            <button className="mato-button">Verstuur</button>
                         </form>
                     </div>
                 </div>
