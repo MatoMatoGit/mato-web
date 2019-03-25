@@ -1,3 +1,45 @@
 .footer {
 	background-color: $mato-grey;
+
+	&-inner {
+		@extend %flex;
+		justify-content: space-between;
+		padding: 3rem 0;
+		align-items: center;
+	}
+
+	&-content {
+		height: 100%;
+		width: 100%;
+		list-style: none;
+		padding: 1rem 2rem;
+
+		@media #{$sm} {
+			width: 50%;
+		}
+
+		@media #{$md} {
+			width: 25%;
+		}
+
+		> li {
+			@extend %p;
+			color: white;
+			font-weight: $weight-bold;
+			text-align: center;
+		}
+
+		&.horizontal {
+			@extend %flex;
+			justify-content: center;
+
+			> li {
+				padding: 1rem 0.5rem;
+
+				img {
+					height: 3rem;
+				}
+			}
+		}
+	}
 }

@@ -5,6 +5,12 @@ $gutter: 0 1.5rem;
 $border-radius: 1rem;
 $button-height: 3rem;
 
+//media
+$sm: "(min-width: 576px)";
+$md: "(min-width: 768px)";
+$lg: "(min-width: 992px)";
+$xl: "(min-width: 1200px)";
+
 //colours
 $mato-green: #8EFFA0;
 $mato-red: #FF8E8E;
@@ -67,4 +73,10 @@ $weight-bold: 700;
 	font-size: $p;
 	font-weight: $weight-regular;
 	color: $mato-grey;
+}
+
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }

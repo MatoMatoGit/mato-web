@@ -15,3 +15,21 @@
 		text-decoration: none;
 	}
 }
+
+.mato-button-alt {
+	@extend %button;
+	min-height: $button-height;
+	height: 3.2rem;
+	line-height: 2rem;
+	border: $border;
+	border-radius: $border-radius;
+	padding: 0.4rem 2rem;
+	transition: all 0.3s ease-in-out;
+	box-sizing: border-box;
+
+	&:hover {
+		color: white;
+		background-color: $mato-black;
+		text-decoration: none;
+	}
+}

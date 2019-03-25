@@ -1,0 +1,108 @@
+.contact {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+
+	&-title {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 5rem;
+
+		h2 {
+			@extend %h2;
+		}
+	}
+
+	&-container {
+		@extend %flex;
+	}
+
+	&-form,
+	&-info {
+		width: 100%;
+
+		@media #{$sm} {
+			width: 40%;
+			margin: 0 5%;
+		}
+
+		@media #{$lg} {
+			width: 35%;
+			margin: 0 7.5%;
+		}
+
+		h4 {
+			@extend %h4;
+			margin-bottom: 1rem;
+		}
+
+		p,
+		li {
+			@extend %p;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+	}
+
+	&-form {
+		form {
+			margin-top: 3rem;
+
+			p {
+				@extend %p;
+				font-weight: $weight-bold;
+				padding: 0;
+				margin: 0 0 .8rem;
+			}
+
+			input, textarea {
+				height: 3.5rem;
+				width: 100%;
+				background-color: lighten($mato-grey, 95%);
+				border: 1px solid $mato-grey;
+				margin: 0 0 1.6rem;
+				padding: 1rem;
+				@extend %p;
+
+				&[name="terms"] {
+					width: auto;
+					height: auto;
+					margin-right: 1rem;
+				}
+			}
+
+			textarea {
+				height: 15rem;
+			}
+
+			span {
+				@extend %p;
+				cursor: pointer;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			button {
+				position: relative;
+				margin-left: auto;
+				margin-top: 2rem;
+				display: block;
+			}
+		}
+	}
+
+	&-info {
+		h4 {
+			@extend %h4;
+		}
+
+		p {
+			@extend %p;
+			margin-bottom: 2rem;
+		}
+	}
+}
