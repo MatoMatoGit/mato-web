@@ -8,15 +8,14 @@ const Header = ({data}) => {
     return (
         <>
             <Navbar bg="white" sticky="top" expand="lg" className="header justify-content-between">
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Brand href="#home">
-                    <img src='./images/matomato.svg' height="36px" alt="MatoMato"/>
+                    <img src='./images/matomato.svg' height="45px" alt="MatoMato"/>
                 </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Scrollspy items={['hero', 'about', 'contact']}
-                                   currentClassName="selected"
-                                   offset={-200}>
+                                   currentClassName="selected">
 
                             <Nav.Link href="#hero">Home</Nav.Link>
                             <Nav.Link href="#about">Over Ons</Nav.Link>

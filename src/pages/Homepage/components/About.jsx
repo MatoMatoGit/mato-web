@@ -6,7 +6,7 @@ const About = ({data}) => {
         <div id="about" className="about">
             <div className="row about-image">
                 <h1>Over MatoMato</h1>
-                <img src='./images/about.png' alt='about' />
+                <img src='./images/about.jpg' alt='about'/>
             </div>
 
             <div className="row">

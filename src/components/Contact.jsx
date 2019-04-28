@@ -12,7 +12,7 @@ class Contact extends React.Component {
 
         axios({
             method: "POST",
-            url: "http://localhost:3002/mail/send",
+            url: "https://mail.evinst.nl:3000/matomato",
             data: {
                 name: name,
                 email: email,
@@ -45,7 +45,7 @@ class Contact extends React.Component {
                         <h4>Laat je adviseren!</h4>
                         <p>Neem contact met ons op via het formulier, of stuur ons een mail.</p>
                         <a className="mato-button-alt" href='mailto:info@info'>Stuur mail</a>
-                        <img src='./images/tomato.svg' alt='tomato'/>
+                        <img src='./images/shovel.jpg' alt='tomato'/>
                     </div>
 
                     <div className="contact-form">

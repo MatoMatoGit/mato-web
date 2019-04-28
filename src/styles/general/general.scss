@@ -1,12 +1,10 @@
 html {
 	font-size: 10px;
-	scroll-behavior: smooth;
 }
 
 .hero,
 .about,
 .contact {
-	min-height: 750px;
 	max-width: $max-width;
 	padding: $gutter;
 	margin: 0 auto;
@@ -16,9 +14,4 @@ html {
 	max-width: $max-width;
 	padding: 0;
 	margin: 0 auto;
-}
-
-html {
-	font-size: 10px;
-	scroll-behavior: smooth;
 }

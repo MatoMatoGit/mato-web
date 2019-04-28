@@ -4,21 +4,37 @@
 	padding: $gutter !important;
 	margin: 0 auto;
 
+	button:focus {
+		outline: 0 !important;
+	}
+
 	.navbar-nav {
 		padding: 0;
+		background-color: white;
 
 		> ul {
-
 			display: flex;
-			flex-wrap: nowrap;
+			flex-wrap: wrap;
+			flex-direction: column;
 			margin: 0;
+			padding: 0;
+
+			@media #{$lg} {
+				flex-wrap: nowrap;
+				flex-direction: row;
+			}
 
 			.nav-link {
 				@extend %h4;
 				position: relative;
 				padding: 0 0 .5rem;
-				margin: 1rem 1.6rem;
 				box-sizing: border-box;
+				margin: 1rem 1.6rem 1rem 0;
+				width: max-content;
+
+				@media #{$lg} {
+					margin: 1rem 1.6rem;
+				}
 
 				&:hover,
 				&:active,

@@ -6,7 +6,7 @@ const Footer = ({data}) => {
         <div className="footer">
             <div className="footer-inner">
                 <ul className="footer-content">
-                    <li><img src='./images/matomato-white.svg' alt='MatoMato'/></li>
+                    <li><img src='./images/matomato-white.svg' alt='MatoMato' height="45px"/></li>
                 </ul>
                 <ul className="footer-content horizontal">
                     <li><img src='./images/facebook.svg' alt='MatoMato'/></li>

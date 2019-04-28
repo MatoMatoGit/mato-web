@@ -1,12 +1,11 @@
 import React from 'react'
-import smoothscroll from 'smoothscroll-polyfill';
 
 // General imports
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Contact from '../../components/Contact'
 import ScrollUpButton from '../../components/ScrollUpButton'
-
+import {ParallaxProvider} from 'react-scroll-parallax';
 
 //Page specific imports
 import Hero from './components/Hero'
@@ -19,12 +18,11 @@ import * as data from './data/cms.json';
 
 const Homepage = () => {
 
-    smoothscroll.polyfill();
-
     return (
-        <>
+        <ParallaxProvider>
+
             <Header data={data}/>
-            <ScrollUpButton ContainerClassName="scroll-top" />
+            <ScrollUpButton data={data}/>
 
             <Hero data={data}/>
             <About data={data}/>
@@ -35,7 +33,8 @@ const Homepage = () => {
             <Contact data={data}/>
 
             <Footer data={data}/>
-        </>
+
+        </ParallaxProvider>
     )
 }
 

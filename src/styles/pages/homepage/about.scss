@@ -1,4 +1,11 @@
 .about {
+	padding-top: 8rem;
+	margin-top: 16rem;
+
+	@media #{$lg} {
+		margin-top: 0;
+	}
+
 	.about-image {
 		position: relative;
 
@@ -13,19 +20,22 @@
 		}
 
 		img {
-			object-fit: fill;
+			object-fit: cover;
 			width: 100%;
-			max-width: $max-width;
 			padding: $gutter;
 			margin: 0 auto;
-			max-height: 50rem;
+			max-height: 25rem;
 			box-sizing: border-box;
-			object-position: center;
+			object-position: top;
+
+			@media #{$lg} {
+				max-width: $max-width;
+			}
 		}
 	}
 
 	.about-content {
-		margin-top: 2.4rem;
+		margin-top: 4rem;
 
 		h1 {
 			@extend %h2;
@@ -39,16 +49,30 @@
 	}
 
 	.about-links {
-		margin-top: 2.4rem;
+		margin-top: 1rem;
+
+		@media #{$md} {
+			margin-top: 4rem;
+		}
 
 		.about-links-buttons {
+			flex-wrap: wrap;
 			width: 100%;
 			display: inline-flex;
 			align-items: flex-end;
-			flex-direction: column;
+			flex-direction: row;
+
+			@media #{$md} {
+				flex-direction: column;
+			}
 
 			.mato-button {
-				margin-bottom: 1.2rem;
+				margin-right: 1rem;
+				margin-top: 1rem;
+
+				@media #{$md} {
+					margin: 0 0 1.2rem 0;
+				}
 			}
 		}
 	}

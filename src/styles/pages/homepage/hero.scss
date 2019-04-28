@@ -1,29 +1,45 @@
 .hero {
-	height: 100vh;
-	margin-top: -8rem;
+	height: auto;
+
+	@media #{$lg} {
+		height: 100vh;
+		margin-top: -8rem;
+	}
 
 	.hero-content {
-		position: absolute;
-		transform: translateY(-50%);
-		top: 50%;
+		@media #{$lg} {
+			position: absolute;
+			transform: translateY(-50%);
+			top: 50%;
+		}
 
 		.hero-image {
 			img {
-				object-fit: contain;
+				object-fit: cover;
 				width: 100%;
-				max-width: $max-width;
 				margin: 0 auto;
-				max-height: 50rem;
-				box-sizing: border-box;
+				max-height: 30rem;
 				object-position: center;
+
+				@media #{$lg} {
+					object-fit: contain;
+					max-width: $max-width;
+					max-height: 50rem;
+					object-position: left;
+				}
 			}
 		}
 
 		.hero-container {
 			.hero-text {
-				position: relative;
-				transform: translateY(-50%);
-				top: 50%;
+				margin-top: 4rem;
+
+				@media #{$lg} {
+					margin-top: 0;
+					position: relative;
+					transform: translateY(-50%);
+					top: 50%;
+				}
 
 				h1 {
 					@extend %h1;

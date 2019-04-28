@@ -4,9 +4,10 @@ import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 export default class Index extends React.Component {
     render() {
         return (
-            <div>
+            <div className="scroll-top">
                 <ScrollUpButton
-                    AnimationDuration={495}
+                    EasingType="easeOutQuad"
+                    AnimationDuration={300}
                 />
             </div>
         );

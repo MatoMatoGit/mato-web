@@ -10,16 +10,16 @@
     "mdbreact": "^4.11.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
-    "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.1",
+    "react-ga": "^2.5.7",
+    "react-hotjar": "^2.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.5",
-    "react-scroll": "^1.7.11",
+    "react-scroll-parallax": "^2.1.2",
     "react-scroll-up-button": "^1.6.4",
-    "react-scrollspy": "^3.3.5",
-    "smoothscroll-polyfill": "^0.4.3"
+    "react-scrollspy": "^3.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,8 +35,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "postcss-smoothscroll-anchor-polyfill": "^1.0.0"
-  }
+  ]
 }

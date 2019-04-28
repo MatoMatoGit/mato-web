@@ -6,7 +6,7 @@ const Hero = ({data}) => {
         <div id="hero" className="hero">
             <div className="row hero-content">
                 <div className="col-12 col-md-6 hero-image">
-                    <img src='./images/hero.svg' alt='MatoMato'/>
+                    <img src='./images/garden.png' alt='MatoMato'/>
                 </div>
                 <div className="col-12 col-md-6 hero-container">
                     <div className="hero-text">

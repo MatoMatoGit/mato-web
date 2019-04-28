@@ -5,8 +5,15 @@ import './styles/theme.scss'
 import Homepage from './pages/Homepage'
 import NotFound from './pages/NotFound'
 
+import { hotjar } from 'react-hotjar';
+import ReactGA from 'react-ga';
+
 class App extends Component {
     render() {
+        ReactGA.initialize('UA-139243792-1');
+        ReactGA.pageview(window.location.pathname + window.location.search);
+        hotjar.initialize(1298606, 6);
+
         return (
             <>
                 <link

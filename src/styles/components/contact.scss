@@ -1,6 +1,6 @@
 .contact {
-	margin-top: 10rem;
-	margin-bottom: 10rem;
+	padding-top: 8rem;
+	margin-top: 16rem;
 
 	&-title {
 		width: 100%;
@@ -47,6 +47,12 @@
 	}
 
 	&-form {
+		margin-top: 4rem;
+
+		@media #{$sm} {
+			margin-top: 0;
+		}
+
 		form {
 			margin-top: 3rem;
 
@@ -62,6 +68,7 @@
 				width: 100%;
 				background-color: lighten($mato-grey, 95%);
 				border: 1px solid $mato-grey;
+				border-radius: $border-radius;
 				margin: 0 0 1.6rem;
 				padding: 1rem;
 				@extend %p;
@@ -70,6 +77,11 @@
 					width: auto;
 					height: auto;
 					margin-right: 1rem;
+				}
+
+				&:focus {
+					outline: 0 !important;
+					border: 1px solid $mato-green;
 				}
 			}
 
@@ -96,6 +108,9 @@
 	}
 
 	&-info {
+		flex-direction: column;
+		display: flex;
+
 		h4 {
 			@extend %h4;
 		}
@@ -103,6 +118,14 @@
 		p {
 			@extend %p;
 			margin-bottom: 2rem;
+		}
+
+		img {
+			object-fit: cover;
+			object-position: bottom;
+			max-width: 100%;
+			margin-top: 2rem;
+			max-height: 50rem;
 		}
 	}
 }
