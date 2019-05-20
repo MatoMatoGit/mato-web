@@ -5,36 +5,33 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Contact from '../../components/Contact'
 import ScrollUpButton from '../../components/ScrollUpButton'
-import {ParallaxProvider} from 'react-scroll-parallax';
 
 //Page specific imports
 import Hero from './components/Hero'
 import About from './components/About'
 import ProductOverviewPage from './components/ProductOverviewPage'
-import ProductDetailPage from './components/ProductDetailPage'
 
 // Data
-import * as data from './data/cms.json';
+import * as menu from './data/menu.json';
+import * as general from './data/general.json';
+import * as products from './data/products.json';
 
 const Homepage = () => {
 
     return (
-        <ParallaxProvider>
+        <>
+            <Header data={menu}/>
+            <ScrollUpButton data={general}/>
 
-            <Header data={data}/>
-            <ScrollUpButton data={data}/>
+            <Hero data={general}/>
+            <About data={general}/>
 
-            <Hero data={data}/>
-            <About data={data}/>
+            <ProductOverviewPage data={products}/>
 
-            <ProductOverviewPage data={data}/>
-            <ProductDetailPage data={data}/>
+            <Contact data={general}/>
 
-            <Contact data={data}/>
-
-            <Footer data={data}/>
-
-        </ParallaxProvider>
+            <Footer data={general}/>
+        </>
     )
 }
 

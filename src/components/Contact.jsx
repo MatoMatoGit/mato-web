@@ -41,17 +41,10 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="contact-container">
-                    <div className="contact-info">
-                        <h4>Laat je adviseren!</h4>
-                        <p>Neem contact met ons op via het formulier, of stuur ons een mail.</p>
-                        <a className="mato-button-alt" href='mailto:info@info'>Stuur mail</a>
-                        <img src='./images/shovel.jpg' alt='tomato'/>
-                    </div>
-
                     <div className="contact-form">
-                        <h4>Stuur me een vraag</h4>
-                        <p>Vul het formulier in en ik beantwoord
-                            je vraag zo snel mogelijk.</p>
+                        <h4>Stuur ons een vraag</h4>
+                        <p>Vul het formulier in en wij beantwoorden
+                            uw vraag zo snel mogelijk.</p>
 
                         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                             <p>Naam</p>
@@ -63,7 +56,7 @@ class Contact extends React.Component {
                             <p>Telefoonnummer*</p>
                             <input id="telephone" name="telephone" type="tel" required/>
 
-                            <p>Je bericht</p>
+                            <p>Uw bericht</p>
                             <textarea id="message" name="message" type="text"/>
 
                             <input name="terms" type="checkbox" required/>
@@ -71,6 +64,12 @@ class Contact extends React.Component {
 
                             <button className="mato-button">Verstuur</button>
                         </form>
+                    </div>
+
+                    <div className="contact-info">
+                        <h4>Wij adviseren u</h4>
+                        <p>Neem contact op met ons op via het formulier, of stuur ons een mail.</p>
+                        <a className="mato-button-alt" href='mailto:info@mato-mato.nl'>Stuur mail</a>
                     </div>
                 </div>
             </div>

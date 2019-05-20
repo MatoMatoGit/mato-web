@@ -1,6 +1,6 @@
 .about {
 	padding-top: 8rem;
-	margin-top: 16rem;
+	margin-top: 8rem;
 
 	@media #{$lg} {
 		margin-top: 0;
@@ -39,12 +39,12 @@
 
 		h1 {
 			@extend %h2;
-			margin-bottom: 2.4rem;
+			margin-bottom: 1.6rem;
 		}
 
 		p {
 			@extend %p;
-			margin-bottom: 2.4rem;
+			margin-bottom: 3.2rem;
 		}
 	}
 

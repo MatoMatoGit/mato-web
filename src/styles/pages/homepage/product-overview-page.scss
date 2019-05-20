@@ -1,0 +1,76 @@
+.product-overview-page {
+	padding-top: 8rem;
+	margin-top: 8rem;
+
+	h1 {
+		@extend %h1;
+	}
+
+	p {
+		@extend %p;
+	}
+
+	.product-overview {
+		@extend %flex;
+		margin: 3.2rem 0;
+
+		.product {
+			position: relative;
+			border-radius: $border-radius;
+			border: $border;
+			width: calc(25% - 1.8rem);
+			padding: 1.2rem;
+			margin: 0 1.2rem;
+			transition: border 0.3s ease-in-out;
+
+			h2 {
+				@extend %h2;
+				color: white;
+				background-color: black;
+				text-align: center;
+				padding: 1rem;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				opacity: 1;
+				transition: opacity 0.3s ease-in-out;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&.disabled {
+				opacity: 0.5;
+			}
+
+			&.enabled:hover {
+				border: $border-mato;
+				cursor: pointer;
+
+				h2 {
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	.actions {
+		width: auto;
+
+		button {
+			display: block;
+			margin-left: auto;
+			margin-top: 1.6rem;
+		}
+	}
+}
