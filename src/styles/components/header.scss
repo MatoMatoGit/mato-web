@@ -57,7 +57,7 @@
 					left: 0;
 					height: 100%;
 					width: 100%;
-					transform-origin: center;
+					transform-origin: left;
 					border-bottom: $border-mato;
 					transform: scale3d(0, 1, 1);
 				}
@@ -67,7 +67,7 @@
 					&::before,
 					&::after {
 						transform: scale3d(1, 1, 1); // Show full-size
-						transition: transform 0.3s;
+						transition: transform 0.3s ease-out;
 					}
 				}
 			}

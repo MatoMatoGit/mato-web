@@ -6,6 +6,7 @@
 
 	&:first-of-type {
 		margin-top: 0;
+		padding-top: 8rem;
 	}
 
 	.product-image {
@@ -64,6 +65,7 @@
 		.description,
 		.mato-button {
 			margin-top: 2rem;
+			display: inline-flex;
 		}
 	}
 
@@ -74,8 +76,13 @@
 		.accordion__item {
 			@extend %p;
 
+			.accordion__panel {
+				padding: 2rem 0 0 0;
+			}
+
 			.accordion__button {
 				background-color: transparent;
+				padding: 2rem 0 0 0;
 
 				@extend %h3;
 			}
@@ -86,6 +93,14 @@
 		.accordion__button {
 			&:focus {
 				outline: 0;
+			}
+		}
+
+		table {
+			width: 100%;
+
+			tr:nth-child(even) {
+				background-color: lighten($mato-grey, 60%);
 			}
 		}
 

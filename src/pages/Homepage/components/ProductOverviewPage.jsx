@@ -16,7 +16,7 @@ const ProductOverviewPage = ({data}) => {
     return (
         <div id="product-overview-page" className="product-overview-page">
 
-            <h1>Onze producten</h1>
+            {/*<h1>Onze producten</h1>*/}
             {/*<p>Simpel en modulair. Alles werkt los van elkaar en samen.</p>*/}
 
             {/*<div className="product-overview">*/}
@@ -28,8 +28,8 @@ const ProductOverviewPage = ({data}) => {
             {/*    <button className="mato-button">Laat je adviseren</button>*/}
             {/*</div>*/}
 
+            {/*<ProductDetailPage productInfo={defaultData[0]}/>*/}
             <ProductDetailPage productInfo={defaultData[0]}/>
-            <ProductDetailPage productInfo={defaultData[1]}/>
         </div>
     )
 };

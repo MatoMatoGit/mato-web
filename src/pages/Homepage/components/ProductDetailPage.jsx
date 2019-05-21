@@ -25,7 +25,7 @@ const ProductDetailPage = ({productInfo}) => {
                 <h2 className="subtitle">{productInfo.subtitle}</h2>
                 <p className="description">{productInfo.description}</p>
 
-                <button className="mato-button">Ik wil dit in mijn tuin!</button>
+                <a className="mato-button" href='#contact'>Ik wil een {productInfo.name}</a>
             </div>
             <Accordion allowZeroExpanded={true}>
                 <AccordionItem>
@@ -35,9 +35,43 @@ const ProductDetailPage = ({productInfo}) => {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                        <p>
-                            {productInfo.description}
-                        </p>
+                        <table>
+                            <tr>
+                                <th>Specificatie</th>
+                                <th>Waade</th>
+                                <th>Opmerking</th>
+                            </tr>
+                            <tr>
+                                <td>Afmeting (l x b x h)</td>
+                                <td>7,5 x 3 x 1 (cm)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Bedrijfsspanning</td>
+                                <td>3V</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Bedrijfssvermogen actief</td>
+                                <td>15mW</td>
+                                <td>3V x 5mA</td>
+                            </tr>
+                            <tr>
+                                <td>Bedrijfssvermogen slaap</td>
+                                <td>20μW</td>
+                                <td>3V x 6.7μA</td>
+                            </tr>
+                            <tr>
+                                <td>Batterij type</td>
+                                <td>CR2032</td>
+                                <td>200 mAh</td>
+                            </tr>
+                            <tr>
+                                <td>Typische batterij levensuur</td>
+                                <td>4 maanden</td>
+                                <td></td>
+                            </tr>
+                        </table>
                     </AccordionItemPanel>
                 </AccordionItem>
             </Accordion>

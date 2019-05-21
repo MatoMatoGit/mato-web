@@ -43,12 +43,16 @@
 
 				h1 {
 					@extend %h1;
-					margin-bottom: 1.6rem;
+					margin-bottom: 3rem;
+
+					span {
+						color: $mato-green;
+					}
 				}
 
 				p {
 					@extend %p;
-					margin-bottom: 2.4rem;
+					margin-bottom: 4rem;
 				}
 
 				.hero-content-buttons .mato-button {
