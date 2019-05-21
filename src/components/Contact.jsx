@@ -57,7 +57,7 @@ class Contact extends React.Component {
                             <input id="telephone" name="telephone" type="tel" required/>
 
                             <p>Uw bericht</p>
-                            <textarea id="message" name="message" type="text"/>
+                            <textarea id="message" name="message" type="text" placeholder="Ik wil een MatoSensor!"/>
 
                             <input name="terms" type="checkbox" required/>
                             <a href="./voorwaarden.pdf"><span>Accepteer onze voorwaarden</span></a>
@@ -67,7 +67,7 @@ class Contact extends React.Component {
                     </div>
 
                     <div className="contact-info">
-                        <h4>Wij adviseren u</h4>
+                        <h4>Wij adviseren je graag!</h4>
                         <p>Neem contact op met ons op via het formulier, of stuur ons een mail.</p>
                         <a className="mato-button-alt" href='mailto:info@mato-mato.nl'>Stuur mail</a>
                     </div>
