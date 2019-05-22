@@ -44,11 +44,11 @@ class Contact extends React.Component {
                     <div className="contact-form">
                         <h4>Stuur ons een vraag</h4>
                         <p>Vul het formulier in en wij beantwoorden
-                            uw vraag zo snel mogelijk.</p>
+                            jouw vraag zo snel mogelijk.</p>
 
                         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                            <p>Naam</p>
-                            <input id="name" name="name" type="text"/>
+                            <p>Naam*</p>
+                            <input id="name" name="name" type="text" required/>
 
                             <p>Emailadres*</p>
                             <input id="email" name="email" type="email" required/>

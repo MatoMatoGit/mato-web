@@ -19,7 +19,7 @@ const Header = ({data}) => {
 
                             <Nav.Link href="#hero">Home</Nav.Link>
                             <Nav.Link href="#about">Over Ons</Nav.Link>
-                            <Nav.Link href="#product-overview-page">Products</Nav.Link>
+                            <Nav.Link href="#product-overview-page">Producten</Nav.Link>
                             <Nav.Link href="#contact">Contact</Nav.Link>
 
                         </Scrollspy>

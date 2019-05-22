@@ -9,8 +9,8 @@ const Footer = ({data}) => {
                     <li><img src='./images/matomato-white.svg' alt='MatoMato' height="45px"/></li>
                 </ul>
                 <ul className="footer-content horizontal">
-                    <li><img src='./images/facebook.svg' alt='MatoMato'/></li>
-                    <li><img src='./images/linkedin.svg' alt='MatoMato'/></li>
+                    <li><a href="https://www.facebook.com/TheRealMatoMato/"><img src='./images/facebook.svg' alt='MatoMato'/></a></li>
+                    <li><a href="https://www.linkedin.com/company/matomato/"><img src='./images/linkedin.svg' alt='MatoMato'/></a></li>
                 </ul>
                 <ul className="footer-content">
                     <li>06-81656062</li>

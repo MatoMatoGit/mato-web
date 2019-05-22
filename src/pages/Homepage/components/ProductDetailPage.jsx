@@ -16,8 +16,6 @@ const ProductDetailPage = ({productInfo}) => {
                 <img src={productInfo.img.img_url} alt={productInfo.img.img_alt}/>
             </div>
             <div className="product-details">
-                <p>#{productInfo.SKU}</p>
-
                 <div className="title">
                     <h1 className="name">{productInfo.name}</h1><h1 className="price">{productInfo.price}</h1>
                 </div>
@@ -67,7 +65,7 @@ const ProductDetailPage = ({productInfo}) => {
                                 <td>200 mAh</td>
                             </tr>
                             <tr>
-                                <td>Typische batterij levensuur</td>
+                                <td>Typische batterij levensduur</td>
                                 <td>4 maanden</td>
                                 <td></td>
                             </tr>

@@ -2,7 +2,7 @@
   {
     "SKU": "MM-001",
     "isEnabled": "enabled",
-    "price": "14,95",
+    "price": "€14,95",
     "type": "simple_product",
     "name": "MatoSensor",
     "img": {

@@ -17,7 +17,7 @@ const Hero = ({data}) => {
                             Nederland te veroveren en een stukje groener te maken.</p>
                         <div className="hero-content-buttons">
                             <a className="mato-button" href='#contact'>Contact</a>
-                            <a className="mato-button" href='#product'>Onze producten</a>
+                            <a className="mato-button" href='#product-overview-page'>Onze producten</a>
                         </div>
                     </div>
                 </div>

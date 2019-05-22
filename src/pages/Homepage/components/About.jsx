@@ -24,8 +24,8 @@ const About = ({data}) => {
                 </div>
                 <div className="col-12 col-md-4 about-links">
                     <div className="about-links-buttons">
-                        <a className="mato-button" href='/'>Facebook</a>
-                        <a className="mato-button" href='/'>LinkedIn</a>
+                        <a className="mato-button" href="https://www.facebook.com/TheRealMatoMato/">Facebook</a>
+                        <a className="mato-button" href="https://www.linkedin.com/company/matomato/">LinkedIn</a>
                     </div>
                 </div>
             </div>
