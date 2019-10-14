@@ -10,11 +10,12 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 
 const ProductDetailPage = ({productInfo}) => {
 
+    function handleClick(e) {
+        this.props.sendData('bieng');
+    }
+
     return (
         <div id="product-detail-page" className="product-detail-page">
-            <div className="product-image">
-                <img src={productInfo.img.img_url} alt={productInfo.img.img_alt}/>
-            </div>
             <div className="product-details">
                 <div className="title">
                     <h1 className="name">{productInfo.name}</h1><h1 className="price">{productInfo.price}</h1>
@@ -23,7 +24,10 @@ const ProductDetailPage = ({productInfo}) => {
                 <h2 className="subtitle">{productInfo.subtitle}</h2>
                 <p className="description">{productInfo.description}</p>
 
-                <a className="mato-button" href='#contact'>Ik wil een {productInfo.name}</a>
+                <a className="mato-button" href='#contact' onClick={handleClick}>Ik wil een {productInfo.name}!</a>
+            </div>
+            <div className="product-image">
+                <img src={productInfo.img.img_url} alt={productInfo.img.img_alt}/>
             </div>
             <Accordion allowZeroExpanded={true}>
                 <AccordionItem>
@@ -34,9 +38,10 @@ const ProductDetailPage = ({productInfo}) => {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <table>
+                            <tbody>
                             <tr>
                                 <th>Specificatie</th>
-                                <th>Waade</th>
+                                <th>Waarde</th>
                                 <th>Opmerking</th>
                             </tr>
                             <tr>
@@ -50,12 +55,12 @@ const ProductDetailPage = ({productInfo}) => {
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>Bedrijfssvermogen actief</td>
+                                <td>Bedrijfsvermogen actief</td>
                                 <td>15mW</td>
                                 <td>3V x 5mA</td>
                             </tr>
                             <tr>
-                                <td>Bedrijfssvermogen slaap</td>
+                                <td>Bedrijfsvermogen slaap</td>
                                 <td>20μW</td>
                                 <td>3V x 6.7μA</td>
                             </tr>
@@ -69,6 +74,7 @@ const ProductDetailPage = ({productInfo}) => {
                                 <td>4 maanden</td>
                                 <td></td>
                             </tr>
+                            </tbody>
                         </table>
                     </AccordionItemPanel>
                 </AccordionItem>

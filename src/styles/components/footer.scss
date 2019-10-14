@@ -1,11 +1,11 @@
 .footer {
 	background-color: $mato-grey;
-	margin-top: 16rem;
+	margin-top: 8rem;
 
 	&-inner {
 		@extend %flex;
 		justify-content: space-between;
-		padding: 3rem 0;
+		padding: 1rem 0;
 		align-items: center;
 	}
 

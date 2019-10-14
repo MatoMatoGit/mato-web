@@ -21,7 +21,7 @@ class Contact extends React.Component {
             }
         }).then((response) => {
             if (response.data.msg === 'success') {
-                alert("Bedankt voor uw bericht.");
+                alert("Bedankt voor je interesse in MatoMato.");
                 this.resetForm()
             } else if (response.data.msg === 'fail') {
                 alert("Het versturen van het bericht is helaas mislukt, probeer het op een later moment nog eens.")
@@ -57,7 +57,7 @@ class Contact extends React.Component {
                             <input id="telephone" name="telephone" type="tel" required/>
 
                             <p>Uw bericht</p>
-                            <textarea id="message" name="message" type="text" placeholder="Ik wil een MatoSensor!"/>
+                            <textarea id="message" name="message" type="text"/>
 
                             <input name="terms" type="checkbox" required/>
                             <a href="./voorwaarden.pdf"><span>Accepteer onze voorwaarden</span></a>
@@ -68,8 +68,8 @@ class Contact extends React.Component {
 
                     <div className="contact-info">
                         <h4>Wij adviseren je graag!</h4>
-                        <p>Neem contact op met ons op via het formulier, of stuur ons een mail.</p>
-                        <a className="mato-button-alt" href='mailto:info@mato-mato.nl'>Stuur mail</a>
+                        <p>Neem gerust contact met ons op via het contactformulier, of stuur ons een e-mail!</p>
+                        <a className="mato-button-alt" href='mailto:info@mato-mato.nl'>Stuur e-mail</a>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 .hero {
 	height: auto;
+	position: relative;
 
 	@media #{$lg} {
-		height: 100vh;
-		margin-top: -8rem;
+		height: calc(90vh - 8rem);
 	}
 
 	.hero-content {
@@ -11,6 +11,7 @@
 			position: absolute;
 			transform: translateY(-50%);
 			top: 50%;
+			flex-direction: row-reverse;
 		}
 
 		.hero-image {
@@ -25,7 +26,7 @@
 					object-fit: contain;
 					max-width: $max-width;
 					max-height: 50rem;
-					object-position: left;
+					object-position: right;
 				}
 			}
 		}

@@ -14,7 +14,7 @@
 
 		@media #{$md} {
 			width: calc(50% - 4rem);
-			margin-right: 4rem;
+			margin-left: 4rem;
 		}
 
 		img {
@@ -48,16 +48,10 @@
 
 		.title {
 			display: flex;
+			justify-content: space-between;
 
 			.name {
-				color: white;
-				background-color: black;
-				padding: 1rem;
-			}
-
-			.price {
-				line-height: 6.8rem;
-				margin-left: 2rem;
+				color: $mato-green;
 			}
 		}
 

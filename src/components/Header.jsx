@@ -9,7 +9,7 @@ const Header = ({data}) => {
         <>
             <Navbar bg="white" sticky="top" expand="lg" className="header justify-content-between">
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="#hero">
                     <img src='./images/matomato.svg' height="45px" alt="MatoMato"/>
                 </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -18,7 +18,7 @@ const Header = ({data}) => {
                                    currentClassName="selected">
 
                             <Nav.Link href="#hero">Home</Nav.Link>
-                            <Nav.Link href="#about">Over Ons</Nav.Link>
+                            <Nav.Link href="#about">Over ons</Nav.Link>
                             <Nav.Link href="#product-overview-page">Producten</Nav.Link>
                             <Nav.Link href="#contact">Contact</Nav.Link>
 

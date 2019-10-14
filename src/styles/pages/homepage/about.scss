@@ -24,9 +24,9 @@
 			width: 100%;
 			padding: $gutter;
 			margin: 0 auto;
-			max-height: 25rem;
+			max-height: 15rem;
 			box-sizing: border-box;
-			object-position: top;
+			object-position: 0 -6rem;
 
 			@media #{$lg} {
 				max-width: $max-width;
@@ -34,13 +34,15 @@
 		}
 	}
 
-	.about-content {
-		margin-top: 4rem;
-
+	.about-title {
 		h1 {
 			@extend %h2;
-			margin-bottom: 1.6rem;
+			margin: 3.2rem 0 1.6rem;
 		}
+	}
+
+	.about-content {
+		margin-top: 1.6rem;
 
 		p {
 			@extend %p;
@@ -52,7 +54,7 @@
 		margin-top: 1rem;
 
 		@media #{$md} {
-			margin-top: 4rem;
+			margin-top: 1.6rem;
 		}
 
 		.about-links-buttons {
@@ -76,4 +78,5 @@
 			}
 		}
 	}
+
 }
