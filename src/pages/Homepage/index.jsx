@@ -24,9 +24,10 @@ const Homepage = () => {
             <ScrollUpButton data={general}/>
 
             <Hero data={general}/>
-            <About data={general}/>
 
             <ProductOverviewPage data={products}/>
+
+            <About data={general}/>
 
             <Contact data={general}/>
 

@@ -9,11 +9,6 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 
 const ProductDetailPage = ({productInfo}) => {
-
-    function handleClick(e) {
-        this.props.sendData('bieng');
-    }
-
     return (
         <div id="product-detail-page" className="product-detail-page">
             <div className="product-details">
@@ -23,8 +18,9 @@ const ProductDetailPage = ({productInfo}) => {
 
                 <h2 className="subtitle">{productInfo.subtitle}</h2>
                 <p className="description">{productInfo.description}</p>
+                <p className="description">{productInfo.descriptionv2}</p>
 
-                <a className="mato-button" href='#contact' onClick={handleClick}>Ik wil een {productInfo.name}!</a>
+                <a className="mato-button" href='#contact'>Ik wil een {productInfo.name}!</a>
             </div>
             <div className="product-image">
                 <img src={productInfo.img.img_url} alt={productInfo.img.img_alt}/>

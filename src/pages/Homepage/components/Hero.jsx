@@ -10,14 +10,11 @@ const Hero = ({data}) => {
                 </div>
                 <div className="col-12 col-md-6 hero-container">
                     <div className="hero-text">
-                        <h1><span>MatoMato</span> pompt leven in jouw tuin!</h1>
-                        <p>Met MatoMato wordt tuinieren makkelijk en leuk. Door ons slimme watersysteem krijg je
-                            beter inzicht in wat je planten nodig hebben. Hierdoor gebruik je minder water. Dit is beter
-                            voor jou en het milieu. Ons doel is om met onze producten alle tuintjes in
-                            Nederland een stukje groener te maken.</p>
+                        <h1>Slimme plantenverzorging voor de wereld van morgen!</h1>
+                        <p>MatoMato ontwikkelt gebruiksvriendelijke elektronica voor het verzorgen van planten. Met onze producten willen we mensen helpen om hun planten goed te verzorgen. Het lukt namelijk niet altijd om kamerplanten of de planten in de tuin optimaal te verzorgen.</p>
+                        <p>Door een druk leven kan het gebeuren dat je vergeet om je planten water te geven, of je geeft te weinig of te veel water aan je planten. Om je hierbij te helpen hebben wij de MatoSensor  ontwikkeld. Lees hieronder verder over deze slimme plantensensor.</p>
                         <div className="hero-content-buttons">
-                            <a className="mato-button" href='#product-overview-page'>Onze producten</a>
-                            <a className="mato-button" href='#contact'>Contact</a>
+                            <a className="mato-button" href='#product-overview-page'>Producten</a>
                         </div>
                     </div>
                 </div>

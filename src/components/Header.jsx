@@ -14,14 +14,12 @@ const Header = ({data}) => {
                 </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Scrollspy items={['hero', 'about', 'product-detail-page', 'contact']}
+                        <Scrollspy items={['hero', 'product-detail-page', 'about']}
                                    currentClassName="selected">
 
                             <Nav.Link href="#hero">Home</Nav.Link>
-                            <Nav.Link href="#about">Over ons</Nav.Link>
                             <Nav.Link href="#product-overview-page">Producten</Nav.Link>
-                            <Nav.Link href="#contact">Contact</Nav.Link>
-
+                            <Nav.Link href="#about">Over ons</Nav.Link>
                         </Scrollspy>
                     </Nav>
                 </Navbar.Collapse>
