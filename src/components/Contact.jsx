@@ -43,8 +43,7 @@ class Contact extends React.Component {
                 <div className="contact-container">
                     <div className="contact-form">
                         <h4>Stuur ons een vraag</h4>
-                        <p>Vul het formulier in en wij beantwoorden
-                            jouw vraag zo snel mogelijk.</p>
+                        <p>Ook voor de aankoop van een MatoSensor kunt u het contactformulier invullen, of een e-mail sturen.</p>
 
                         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                             <p>Naam*</p>
@@ -53,8 +52,8 @@ class Contact extends React.Component {
                             <p>Emailadres*</p>
                             <input id="email" name="email" type="email" required/>
 
-                            <p>Telefoonnummer*</p>
-                            <input id="telephone" name="telephone" type="tel" required/>
+                            <p>Telefoonnummer</p>
+                            <input id="telephone" name="telephone" type="tel"/>
 
                             <p>Uw bericht</p>
                             <textarea id="message" name="message" type="text"/>
